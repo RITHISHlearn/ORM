@@ -6,7 +6,8 @@ To develop a Django application to store and retrieve data from a Book database 
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+ ![mm](https://github.com/RITHISHlearn/ORM/assets/145446645/f1cf3546-b520-499b-9d11-c3d297b35d1d)
+
 
 ## DESIGN STEPS
 
@@ -23,12 +24,46 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+Model.py
 
-Include your code here
+
+from django.db import models
+
+from django.contrib import admin
+
+class Employee (models.Model):
+
+    eid=models.CharField(max_length=20,help_text="Employee ID")
+    
+    name=models.CharField(max_length=100)
+    
+    salary=models.IntegerField()
+    
+    age=models.IntegerField()
+    
+    email=models.EmailField()
+    
+ 
+class EmployeeAdmin(admin.ModelAdmin):
+
+    list_display=('eid','name','salary','age','email')
+    
+
+Admin.py
+
+
+from django.contrib import admin
+
+from .models import Employee,EmployeeAdmin
+
+admin.site.register(Employee,EmployeeAdmin)
+
+ 
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![ml](https://github.com/RITHISHlearn/ORM/assets/145446645/aa998710-5d67-40df-ac6e-71414b82d584)
+ 
 
 
 ## RESULT
