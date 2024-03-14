@@ -15,7 +15,7 @@ To develop a Django application to store and retrieve data from a Book database 
 Clone the problem from GitHub
 
 ### STEP 2:
-Create a new app in Django project
+Create a new app in Django project 
 
 ### STEP 3:
 Enter the code for admin.py and models.py
