@@ -6,7 +6,8 @@ To develop a Django application to store and retrieve data from a Book database 
 
 ## Entity Relationship Diagram
 
- ![mm](https://github.com/RITHISHlearn/ORM/assets/145446645/f1cf3546-b520-499b-9d11-c3d297b35d1d)
+![mku](https://github.com/RITHISHlearn/ORM/assets/145446645/c177512c-1f3c-4471-97d9-f5082f79ff9f)
+ 
 
 
 ## DESIGN STEPS
@@ -24,7 +25,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-Model.py
+## Model.py:
 
 
 from django.db import models
@@ -49,7 +50,7 @@ class EmployeeAdmin(admin.ModelAdmin):
     list_display=('eid','name','salary','age','email')
     
 
-Admin.py
+## Admin.py:
 
 
 from django.contrib import admin
@@ -62,8 +63,8 @@ admin.site.register(Employee,EmployeeAdmin)
 
 ## OUTPUT
 
-![ml](https://github.com/RITHISHlearn/ORM/assets/145446645/aa998710-5d67-40df-ac6e-71414b82d584)
- 
+ ![mk](https://github.com/RITHISHlearn/ORM/assets/145446645/44e12460-e709-4853-a9aa-6635986fc7c4)
+
 
 
 ## RESULT
